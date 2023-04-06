@@ -1,8 +1,11 @@
 const Service = require('./service');
+const env = process.env.NODE_ENV || 'dev';
+const config = require(`../environment/${env}.js`);
+const baseUrl = config.baseUrl;
 
 class Countries {
     constructor() {
-        this.api = new Service('https://restcountries.com');
+        this.api = new Service(baseUrl);
     }
 
     getAllCountries() {

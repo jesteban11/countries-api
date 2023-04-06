@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha test",
+    "test:dev": "set NODE_ENV=dev npm run test",
+    "test:qa": "set NODE_ENV=qa&& npm run test",
+    "test:stg": "set NODE_ENV=stg&& npm run test",
+    "test:prd": "set NODE_ENV=prd&& npm run test"
   },
   "keywords": [],
   "author": "",
