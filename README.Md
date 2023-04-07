@@ -2,7 +2,7 @@
 
 ## To run the project
 
-`npm mocha test` by default it takes dev
+`npx mocha test` by default it takes dev
 
 `npm run test:dev`
 
