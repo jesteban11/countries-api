@@ -1,0 +1,7 @@
+{
+  "reporter": "mochawesome",
+  "reporterOptions": [
+    "reportDir=mochawesome-report",
+    "reportFilename=[status]_[datetime]-[name]"
+  ]
+}
